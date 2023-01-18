@@ -1,15 +1,28 @@
 {
-  "include": [
-    "src/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "./node_modules",
-    "./node_modules/*"
-  ],
+  "include": ["src/*"],
+  "exclude": ["node_modules", "./node_modules", "./node_modules/*"],
   "compilerOptions": {
-    "target": "es2016",
-    "moduleResolution": "node",
-    "types": []
+    "outDir": "dist",
+    "target": "ESNext",
+    "lib": ["esnext"],
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "allowUnreachableCode": false,
+    "skipLibCheck": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true
   }
 }

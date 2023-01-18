@@ -1,11 +1,11 @@
-import get from "lodash.get";
+import get from "lodash/get";
 import got from "got";
 
 type Commit = {
     message: string;
 };
 
-const extractCommits = async (context): Promise<Commit[]> => {
+const extractCommits = async (context: any): Promise<Commit[]> => {
     // For "push" events, commits can be found in the "context.payload.commits".
     const pushCommits = Array.isArray(get(context, "payload.commits"));
     if (pushCommits) {
