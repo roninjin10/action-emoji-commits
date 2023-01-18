@@ -6,7 +6,7 @@ Note that, typically, you would make this check on a pre-commit hook (for exampl
 
 ### Usage
 
-Latest version: `0.0.7`
+Latest version: `0.0.8`
 
 ```yml
 name: 🔧 Gitmoji
